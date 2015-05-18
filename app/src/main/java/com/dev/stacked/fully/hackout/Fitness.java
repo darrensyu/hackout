@@ -37,6 +37,7 @@ public class Fitness extends Activity {
         btn_save.setClickable(false);
         btn_load.setTextColor(getResources().getColor(R.color.light_grey));
         btn_save.setTextColor(getResources().getColor(R.color.light_grey));
+        toggle_edit.setTextColor(getResources().getColor(R.color.black));
         et_workout.setEnabled(false);
         et_workout.setCursorVisible(false);
 
@@ -48,6 +49,7 @@ public class Fitness extends Activity {
                     btn_save.setClickable(true);
                     btn_load.setTextColor(getResources().getColor(R.color.black));
                     btn_save.setTextColor(getResources().getColor(R.color.black));
+                    toggle_edit.setTextColor(getResources().getColor(R.color.light_grey));
                     et_workout.setEnabled(true);
                     et_workout.setCursorVisible(true);
                 }
@@ -56,6 +58,7 @@ public class Fitness extends Activity {
                     btn_save.setClickable(false);
                     btn_load.setTextColor(getResources().getColor(R.color.light_grey));
                     btn_save.setTextColor(getResources().getColor(R.color.light_grey));
+                    toggle_edit.setTextColor(getResources().getColor(R.color.black));
                     et_workout.setEnabled(false);
                     et_workout.setCursorVisible(false);
                 }
