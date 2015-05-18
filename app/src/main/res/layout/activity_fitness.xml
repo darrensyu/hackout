@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dev.stacked.fully.hackout.Fitness"
+    android:background="@color/light_green">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fit_workout_name"
+        android:inputType="textCapWords"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/fit_et_workout_name_hint"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:background="@color/transparent"
+        android:maxLength="20"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fit_save"
+        android:text="@string/fit_btn_save"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fit_load"
+        android:text="@string/fit_btn_load"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/fit_save"
+        style="?android:attr/borderlessButtonStyle"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <ToggleButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fit_edit_mode"
+        android:gravity="center"
+        android:layout_above="@id/fit_load"
+        android:textOn="@string/fit_edit_tog_on"
+        android:textOff="@string/fit_edit_tog_off"
+        android:textSize="25sp"
+        android:background="@drawable/fit_edit_toggle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>
